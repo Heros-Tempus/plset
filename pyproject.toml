@@ -1,0 +1,16 @@
+[project]
+name = "plset"
+version = "0.1.0"
+description = "Playlist set algebra CLI tool"
+authors = [{ name = "Heros Tempus" }]
+requires-python = ">=3.8"
+
+[project.scripts]
+plset = "plset.cli:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.optional-dependencies]
+dev = ["pytest"]
